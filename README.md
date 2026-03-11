@@ -2,33 +2,41 @@
 <html>
 
 <head>
-<title>uglyfoid's wired page</title>
+<title>uglyfoid wired node</title>
 
 <style>
-
 body{
-    background:#000000;
-    color:#00ff88;
-    font-family:"Courier New", monospace;
-    text-align:center;
-    margin:0;
-    padding:0;
+background:black;
+color:#00ff88;
+font-family:Courier New, monospace;
+text-align:center;
 }
 
-/* CRT scanline effect */
-body::after{
-    content:"";
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:repeating-linear-gradient(
-        to bottom,
-        rgba(0,0,0,0) 0px,
-        rgba(0,0,0,0) 2px,
-        rgba(0,0,0,0.15) 3px
-    );
+h1{
+color:#00ff88;
+text-shadow:0 0 10px #00ff88;
+}
+
+a{
+color:#00ff88;
+text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>WELCOME TO THE WIRED</h1>
+
+<p>present day. present time.</p>
+
+<a href="#">logs</a><br>
+<a href="#">network</a>
+
+</body>
+
+</html>    );
     pointer-events:none;
 }
 
