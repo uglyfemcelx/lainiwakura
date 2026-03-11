@@ -126,8 +126,6 @@ animation:cursorblink 1s infinite;
 
 <p>> connected to the wired<
 
-</center>
-
 
 <div class="box">
 
