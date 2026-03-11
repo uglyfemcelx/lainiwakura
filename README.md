@@ -122,7 +122,7 @@ animation:cursorblink 1s infinite;
 
 <center>
 
-![image alt]([img src="[![Uploading 17732108776125542923430416648965." width="300">
+![image alt](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)
 
 <p>> connected to the wired<
 
