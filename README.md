@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -200,7 +199,7 @@ image-rendering:pixelated;
 
 ![image alt](https://github.com/uglyfemcelx/lainiwakura/blob/1e168ab75ee51bb98be93ace39219c8a94e9c143/95fa293da3fcde364797fc168d892a5a.webp)
 
-<br><br>
+<br>
 
 <p>> connected to the wired</p>
 
