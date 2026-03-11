@@ -175,9 +175,16 @@ animation:scan 8s linear infinite;
 }
 
 
+.wiredpic{
+margin-top:40px;
+text-align:center;
+}
+
 .lainimg{
 width:220px;
-image-rendering:pixelated;
+display:block;
+margin:auto;
+box-shadow:0 0 20px #00ff88;
 }
   
 </style>
@@ -195,9 +202,13 @@ image-rendering:pixelated;
 
 <center>
 
-<div style="margin-top:40px;">
-<img src="https://github.com/uglyfemcelx/lainiwakura/blob/1e168ab75ee51bb98be93ace39219c8a94e9c143/95fa293da3fcde364797fc168d892a5a.webp" width="220">
+
+<div class="wiredpic">
+
+<img src="https://github.com/uglyfemcelx/lainiwakura/blob/1e168ab75ee51bb98be93ace39219c8a94e9c143/95fa293da3fcde364797fc168d892a5a.webp" class="lainimg">
+
 <p>> connected to the wired</p>
+
 </div>
 
 
