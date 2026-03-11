@@ -245,6 +245,22 @@ animation:pulse 1.5s infinite;
 100%{box-shadow:0 0 5px #00ff88;}
 }
 
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="uglyfemcelx/lainiwakura"
+        data-repo-id="REPO_ID"
+        data-category="General"
+        data-category-id="CATEGORY_ID"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-theme="dark"
+        crossorigin="anonymous"
+        async>
+</script>
+    
   
 </style>
 
