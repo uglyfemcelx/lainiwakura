@@ -122,7 +122,77 @@ animation:cursorblink 1s infinite;
 
 <center>
 
-![image alt](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)
+<div class="wiredpic">
+
+<img src="[ee86ae8f568ecdd24f432af7157ca18c.jpg](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)" width="300">
+
+/* image section */
+
+.wiredpic{
+margin-top:40px;
+text-align:center;
+}
+
+/* image style */
+
+.wiredpic img{
+display:block;
+margin:auto;
+margin-bottom:15px;
+box-shadow:0 0 25px #00ff88;
+animation:glitch 2s infinite;
+}
+
+/* glitch movement */
+
+@keyframes glitch{
+0%{transform:translate(0);}
+20%{transform:translate(-2px,2px);}
+40%{transform:translate(2px,-2px);}
+60%{transform:translate(-1px,1px);}
+80%{transform:translate(1px,-1px);}
+100%{transform:translate(0);}
+}
+
+/* flicker text */
+
+.wiredpic p{
+animation:flicker 2s infinite;
+}
+
+@keyframes flicker{
+0%{opacity:1;}
+10%{opacity:0.6;}
+20%{opacity:1;}
+30%{opacity:0.8;}
+40%{opacity:1;}
+}
+
+/* moving CRT scanlines */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+background:repeating-linear-gradient(
+to bottom,
+rgba(0,0,0,0) 0px,
+rgba(0,0,0,0) 2px,
+rgba(0,255,136,0.05) 3px
+);
+animation:scan 8s linear infinite;
+}
+
+/* scanline movement */
+
+@keyframes scan{
+0%{transform:translateY(-100%);}
+100%{transform:translateY(100%);}
+}
 
 </div>
 
