@@ -202,10 +202,9 @@ box-shadow:0 0 20px #00ff88;
 
 <center>
 
-
 <div class="wiredpic">
 
-<img src="https://github.com/uglyfemcelx/lainiwakura/blob/1e168ab75ee51bb98be93ace39219c8a94e9c143/95fa293da3fcde364797fc168d892a5a.webp" class="lainimg" width="220">
+<img src="https://raw.githubusercontent.com/uglyfemcelx/lainiwakura/main/ee86ae8f568ecdd24f432af7157ca18c.jpg" class="lainimg" width="220">
 
 <p>> connected to the wired</p>
 
