@@ -193,7 +193,7 @@ animation:scan 8s linear infinite;
 
 <div class="wiredpic">
 
-![image alt](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)
+![image alt](https://github.com/uglyfemcelx/lainiwakura/blob/1e168ab75ee51bb98be93ace39219c8a94e9c143/95fa293da3fcde364797fc168d892a5a.webp)
 
 <br><br>
 
