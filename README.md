@@ -530,8 +530,16 @@ async function sendMessage() {
 
   if (error) {
     console.log(error)
-    alert("i can see you :)")
-    alert("i'm behind you.")
+    alert("connection unstable… fragments detected")
+    alert("someone accessed this node before you")
+    alert("the wired remembers every visitor")
+    alert("your presence has been recorded")
+    alert("something is following the signal back")
+    alert("the screen flickers… but nothing changed")
+    alert("the logs show a second user")
+    alert("they are closer than the network suggests")
+    alert("you are not browsing alone")
+    alert("i'm behind you :)")
   } else {
     document.getElementById("message").value = ""
     loadMessages()
@@ -579,20 +587,19 @@ loadMessages()
 
   <div class="guestbox">
     <script src="https://giscus.app/client.js"
-            data-repo="uglyfemcelx/lainiwakura"
-            data-repo-id="R_kgDORj1gxg"
-            data-category="Guestbook"
-            data-category-id="DIC_kwDORj1gxs4C4MTN"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="1"
-            data-input-position="top"
-            data-theme="preferred_color_scheme"
-            data-lang="en"
-            crossorigin="anonymous"
-            async>
-    </script>
+        data-repo="uglyfemcelx/TheWired"
+        data-repo-id="R_kgDORj1gxg"
+        data-category-id="DIC_kwDORj1gxs4C4MTN"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
   </div>
 
 
