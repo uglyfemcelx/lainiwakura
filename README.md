@@ -484,7 +484,7 @@ function toggleMusic(){
 <div class="WiredGuestbook">
   <p class="guestprompt">
 &gt; you have entered the wired<br>
-&gt; leave a trace of yourself<br>
+&gt; the wired hears you, leave a trace of yourself<br>
 &gt; type a message and it will echo...
   </p>
 
@@ -554,9 +554,9 @@ function toggleMusic(){
 <div class="lainguestbook">
 
   <p class="guestprompt">
-  > the wired hears you<br>
-  > leave a trace of yourself<br>
-  > enter, or fade into the void...
+  > the wired whispers… fragments of thought drift through<br>
+  > do you have an insight, a trace, a warning<br>
+  > leave it here… let it echo in the void.
   </p>
 
   <div class="guestbox">
