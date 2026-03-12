@@ -76,7 +76,7 @@ to{width:100%}
 .box{
 border:1px solid #00ff88;
 padding:20px;
-width:320px;
+width:900px;
 margin:auto;
 background:rgba(0,0,0,0.7);
 }
