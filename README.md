@@ -378,7 +378,19 @@ margin-top:20px;
 
 /*surprised */
 
-
+#secretBox{
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:black;
+  color:#00ff88;
+  border:1px solid #00ff88;
+  padding:20px;
+  font-family:monospace;
+  z-index:999;
+}
 
 
   
@@ -603,6 +615,26 @@ loadMessages()
   </div>
 
 
+
+
+<a href="#" onclick="openBox()">enter deeper into the wired</a>
+
+<div id="secretBox">
+  <p>you should not have clicked that.</p>
+  <p>the wired noticed you.</p>
+  <button onclick="closeBox()">leave</button>
+</div>
+
+
+<script>
+function openBox(){
+  document.getElementById("secretBox").style.display = "block";
+}
+
+function closeBox(){
+  document.getElementById("secretBox").style.display = "none";
+}
+</script>
 
 
 
