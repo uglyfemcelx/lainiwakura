@@ -496,13 +496,14 @@ function toggleMusic(){
 </div>
 
 
+
 <!-- Supabase JS -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script>
-  // replace with your Supabase URL & anon key
-  const supabaseUrl = 'YOUR_SUPABASE_URL';
-  const supabaseKey = 'sb_publishable_hv7yqk9FOUF1T6RGBcYHdw_DKMa1IcI';
+  // Supabase setup
+  const supabaseUrl = 'YOUR_SUPABASE_URL'; // replace with your Supabase project URL
+  const supabaseKey = 'sb_publishable_B-qJYwv12Z5bph_02y8Jbg_JpgJmy6-'; // your anon key
   const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
   const messagesDiv = document.getElementById('messages');
@@ -544,8 +545,6 @@ function toggleMusic(){
     })
     .subscribe();
 </script>
-
-
 
 
 
