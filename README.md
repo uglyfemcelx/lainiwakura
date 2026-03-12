@@ -555,7 +555,7 @@ function toggleMusic(){
 <a href="https://youtu.be/j0pvoSl2Es0?feature=shared"> connected</a>
 
 
-<div>
+</div>
 
 <p>> connection stable<span class="cursor">_</span></p>
 
