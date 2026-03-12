@@ -370,81 +370,21 @@ margin-top:20px;
 }
 
 
+
+CREATE POLICY "Allow insert for all" 
+ON messages
+FOR INSERT 
+USING (true);
+
+
+    
+
 </div>
 
 /*surprised */
 
 
-#wiredSurprise{
-  max-width:600px;
-  margin:auto;
-  text-align:center;
-  color:#00ff88;
-  font-family:"Courier New", monospace;
-  border:1px solid #00ff88;
-  padding:20px;
-  background:rgba(0,0,0,0.8);
-  box-shadow:0 0 25px #00ff88;
-}
 
-.surpriseMessage{
-  white-space:pre-line;
-  overflow:hidden;
-  border-right:2px solid #00ff88;
-  opacity:0;
-}
-
-/* fade in container */
-#wiredSurprise.show{
-  animation:fadeIn 1.5s forwards;
-}
-
-/* typing animation for message */
-.surpriseMessage.show{
-  animation:typing 6s steps(150,end), blink 1s infinite;
-}
-
-/* keyframes */
-@keyframes typing{
-from{width:0;}
-to{width:100%;}
-}
-
-@keyframes blink{
-50%{border-color:transparent;}
-}
-
-@keyframes fadeIn{
-from{opacity:0;}
-to{opacity:1;}
-}
-
-/* subtle glitch shake */
-@keyframes glitchShake{
-0%{transform:translate(0);}
-20%{transform:translate(-2px,1px);}
-40%{transform:translate(2px,-1px);}
-60%{transform:translate(-1px,2px);}
-80%{transform:translate(1px,-2px);}
-100%{transform:translate(0);}
-}
-
-#wiredSurprise:hover{
-  animation:glitchShake 1s infinite;
-}
-
-window.addEventListener('scroll', () => {
-  const scrollPos = window.scrollY + window.innerHeight;
-  const surprise = document.getElementById('wiredSurprise');
-  const triggerPoint = 400; // scroll distance to trigger, adjust as needed
-
-  if(scrollPos > triggerPoint && !surprise.classList.contains('show')){
-    surprise.style.display = 'block';
-    surprise.classList.add('show');
-    surprise.querySelector('.surpriseMessage').classList.add('show');
-  }
-});
-    
 
   
 </style>
@@ -651,13 +591,6 @@ function toggleMusic(){
   </div>
 
 
-<div id="wiredSurprise" style="display:none; text-align:center; margin:50px auto;">
-  <p class="surpriseMessage">
-&gt; you’ve wandered deeper into the wired… fragments of thought flicker past…<br>
-&gt; something watches, something whispers…<br>
-&gt; are you still yourself, or just a signal in the void?
-  </p>
-</div>
 
 
 
