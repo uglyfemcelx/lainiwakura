@@ -427,7 +427,7 @@ animation:blink 1s infinite;
 
 <head>
   <meta charset="UTF-8">
-  <title>The Wired</title>  <!-- this MUST be exactly your new name -->
+  <title>The Wired</title>
 </head>
 
 <body>
@@ -459,7 +459,8 @@ const quotes = [
 "the wired is not bound by reality",
 "people only see what they want to see",
 "is the real world really real?",
-"everyone is connected"
+"remember,",
+"everyone is always connected."
 ];
 
 const box = document.getElementById("quotebox");
