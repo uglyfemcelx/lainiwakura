@@ -256,7 +256,7 @@ body {
   padding: 20px;
 }
 
-.WiredGuestbook{
+.wiredguestbook{
   border:1px solid #00ff88;
   padding:20px;
   margin:50px auto;
@@ -282,8 +282,8 @@ to{width:100%}
 50%{border-color:transparent}
 }
 
-.WiredGuestbook input,
-.WiredGuestbook textarea{
+.wiredguestbook input,
+.wiredguestbook textarea{
   width: 100%;
   background: black;
   color: #00ff88;
@@ -293,7 +293,7 @@ to{width:100%}
   padding:5px;
 }
 
-.WiredGuestbook button{
+.wiredguestbook button{
   background:black;
   color:#00ff88;
   border:1px solid #00ff88;
@@ -301,7 +301,7 @@ to{width:100%}
   cursor:pointer;
 }
 
-#messages p{
+#message p{
   margin:5px 0;
   text-shadow:0 0 3px #00ff88;
   animation:glitch 2s infinite;
@@ -492,14 +492,14 @@ function toggleMusic(){
 <p>> connection stable<span class="cursor">_</span></p>
 
 
-<div class="WiredGuestbook">
+<div class="wiredguestbook">
   <p class="guestprompt">
 &gt; you have entered the wired<br>
 &gt; the wired hears you, leave a trace of yourself<br>
 &gt; type a message and it will echo...
   </p>
 
-<input id="username" placeholder="name (optional)">
+<input id="username" placeholder="username (optional)">
 <textarea id="message" placeholder="leave a signal in the wired"></textarea>
 <button onclick="sendMessage()">send</button>
 
@@ -525,12 +525,12 @@ async function sendMessage() {
   }
 
   const { error } = await supabaseClient
-    .from("messages")
+    .from("message")
     .insert([{ username: username, message: message }])
 
   if (error) {
     console.log(error)
-    alert("signal failed to reach the wired")
+    alert("signal failed to reach the wired :(")
   } else {
     document.getElementById("message").value = ""
     loadMessages()
@@ -539,11 +539,11 @@ async function sendMessage() {
 
 async function loadMessages() {
   const { data } = await supabaseClient
-    .from("messages")
+    .from("message")
     .select("*")
     .order("created_at", { ascending: false })
 
-  const box = document.getElementById("guestbook")
+  const box = document.getElementById("wiredguestbook")
   box.innerHTML = ""
 
   data.forEach(msg => {
