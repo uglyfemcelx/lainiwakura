@@ -371,11 +371,6 @@ margin-top:20px;
 
 
 
-CREATE POLICY "Allow insert for all" 
-ON messages
-FOR INSERT 
-USING (true);
-
 
     
 
@@ -504,63 +499,66 @@ function toggleMusic(){
 &gt; type a message and it will echo...
   </p>
 
-  <input type="text" id="username" placeholder="username (optional)">
-  <textarea id="message" placeholder="your message here"></textarea>
-  <button id="send">send</button>
+<input id="username" placeholder="name (optional)">
+<textarea id="message" placeholder="leave a signal in the wired"></textarea>
+<button onclick="sendMessage()">send</button>
 
-  <div id="messages"></div>
-</div>
-
+<div id="guestbook"></div>
 
 
-<!-- Supabase JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script>
-  // Supabase setup
-  const supabaseUrl = 'YOUR_SUPABASE_URL'; // replace with your Supabase project URL
-  const supabaseKey = 'sb_publishable_B-qJYwv12Z5bph_02y8Jbg_JpgJmy6-'; // your anon key
-  const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+const supabaseUrl = "https://YOUR_PROJECT_ID.supabase.co"
+const supabaseKey = "sb_publishable_ey8E8DUKnY7LyjObIhFUMA_z8-d4_U8"
 
-  const messagesDiv = document.getElementById('messages');
-  const sendBtn = document.getElementById('send');
+const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey)
 
-  async function loadMessages(){
-    const { data } = await supabase
-      .from('messages')
-      .select('*')
-      .order('created_at', { ascending: true });
-    messagesDiv.innerHTML = '';
-    data.forEach(msg => {
-      const p = document.createElement('p');
-      p.textContent = `> ${msg.username || 'user_anon'} entered the wired: ${msg.message}`;
-      messagesDiv.appendChild(p);
-    });
+async function sendMessage() {
+  const username = document.getElementById("username").value || "anonymous"
+  const message = document.getElementById("message").value
+
+  if (!message) {
+    alert("the wired cannot hear silence...")
+    return
   }
 
-  sendBtn.addEventListener('click', async () => {
-    const username = document.getElementById('username').value || 'user_anon';
-    const message = document.getElementById('message').value;
-    if(!message) return;
-    await supabase.from('messages').insert([{username,message}]);
-    document.getElementById('message').value = '';
-    loadMessages();
-  });
+  const { error } = await supabaseClient
+    .from("messages")
+    .insert([{ username: username, message: message }])
 
-  // initial load
-  loadMessages();
+  if (error) {
+    console.log(error)
+    alert("signal failed to reach the wired")
+  } else {
+    document.getElementById("message").value = ""
+    loadMessages()
+  }
+}
 
-  // live updates
-  supabase
-    .channel('public:messages')
-    .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages' }, payload => {
-      const msg = payload.new;
-      const p = document.createElement('p');
-      p.textContent = `> ${msg.username || 'user_anon'} entered the wired: ${msg.message}`;
-      messagesDiv.appendChild(p);
-    })
-    .subscribe();
+async function loadMessages() {
+  const { data } = await supabaseClient
+    .from("messages")
+    .select("*")
+    .order("created_at", { ascending: false })
+
+  const box = document.getElementById("guestbook")
+  box.innerHTML = ""
+
+  data.forEach(msg => {
+    const div = document.createElement("div")
+    div.innerHTML = "<b>" + msg.username + ":</b> " + msg.message
+    box.appendChild(div)
+  })
+}
+
+loadMessages()
 </script>
+
+
+
+
 
 
 
