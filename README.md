@@ -76,7 +76,7 @@ to{width:100%}
 .box{
 border:1px solid #00ff88;
 padding:20px;
-width:500px;
+width:410px;
 margin:auto;
 background:rgba(0,0,0,0.7);
 }
@@ -373,10 +373,13 @@ margin-top:20px;
 /*secret main site*/
 
 .wiredmap{
-text-align:center;
-font-family: "Courier New", monospace;
+font-family:"Courier New", monospace;
 color:#00ff88;
-margin-top:200px;
+white-space:pre;
+text-align:center;
+margin-top:30px;
+line-height:1.5;
+text-shadow:0 0 8px #00ff88;
 }
 
 .node{
