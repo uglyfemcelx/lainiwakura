@@ -530,21 +530,15 @@ async function sendMessage() {
 
   if (error) {
     console.log(error)
-    alert("signal failed to reach the wired :(")
+    alert("i can see you :)")
+    alert("i'm behind you.")
   } else {
     document.getElementById("message").value = ""
     loadMessages()
   }
 }
 
-  const errBox = document.createElement("div")
-  errBox.style.color = "red"
-  errBox.style.marginTop = "10px"
-  errBox.textContent = "wired error: " + error.message
-
-  document.body.appendChild(errBox)
-}
-
+  
 
 
   
