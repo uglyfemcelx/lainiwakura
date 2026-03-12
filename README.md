@@ -377,15 +377,26 @@ margin-top:20px;
 </div>
 
 /*surprised */
-
-#wiredMessage{
-opacity:0;
-text-align:center;
+#wiredTrigger{
 color:#00ff88;
 font-family:monospace;
-margin-top:400px;
-transition:opacity 2s;
+text-align:center;
+margin-top:350px;
+cursor:pointer;
 }
+
+#wiredSecret{
+display:none;
+color:#00ff88;
+font-family:monospace;
+background:black;
+border:1px solid #00ff88;
+padding:20px;
+margin:40px auto;
+max-width:520px;
+line-height:1.6;
+}
+
 
 
   
@@ -618,31 +629,23 @@ loadMessages()
 
 <br>
 
+<div id="wiredTrigger">dive down deeper into the wired…</div>
 
-<div id="wiredMessage">
-  <p>> you’ve wandered deeper into the wired…</p>
-  <p>> fragments of thought flicker past…</p>
-  <p>> something watches. something whispers.</p>
-  <p>> are you still yourself?</p>
-  <p>> or just a signal in the void?</p>
+<div id="wiredSecret">
+<p>> you’ve wandered deeper into the wired…</p>
+<p>> fragments of thought flicker past…</p>
+<p>> something watches. something whispers.</p>
+<p>> are you still yourself?</p>
+<p>> or just a signal in the void?</p>
 </div>
 
+
+
 <script>
-window.addEventListener("scroll", function() {
-
-  var message = document.getElementById("wiredMessage");
-
-  if (window.scrollY > 300) {
-    message.style.opacity = "1";
-  }
-
-});
+document.getElementById("wiredTrigger").onclick = function(){
+document.getElementById("wiredSecret").style.display = "block";
+}
 </script>
-
-
-
-
-
 
 </body>
 
