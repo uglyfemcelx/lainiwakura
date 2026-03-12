@@ -553,9 +553,7 @@ function toggleMusic(){
 <div class="lainguestbook">
 
   <p class="guestprompt">
-  > the wired whispers… fragments of thought drift through<br>
-  > do you have an insight, a trace, a warning<br>
-  > leave it here… let it echo in the void.
+  > the wired whispers… fragments of thought drift through. do you have an insight, a trace, a warning. leave it here… let it echo in the void.
   </p>
 
   <div class="guestbox">
