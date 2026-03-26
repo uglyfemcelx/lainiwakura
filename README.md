@@ -555,7 +555,7 @@ function toggleMusic(){
 
 <div class="line">│</div>
 
-<a href="https://uglyfemcelx.github.io/node02/" class="node">node_02</a>
+<a href="https://uglyfemcelx.github.io/node_02/" class="node">node_02</a>
 
 <div class="line">├────</div>
 
