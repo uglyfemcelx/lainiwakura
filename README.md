@@ -547,7 +547,7 @@ function toggleMusic(){
 <p>> access node : uglyfoid network</p>
 <div class="wiredmap">
 
-<a href="https://uglyfemcelx.github.io/node01/" class="node">node_01</a>
+<a href="https://uglyfemcelx.github.io/node_1/" class="node">node_01</a>
 
 <div class="line">│</div>
 
