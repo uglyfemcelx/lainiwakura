@@ -717,41 +717,41 @@ const wiredLines = [
 "> fragments of thought flicker past…",
 "> something watches. something whispers.",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> are you still yourself?",
-"> or just a signal in the void?"
+"> or just a signal in the void?",
 "> ₐᵣₑ yₒᵤ ₛₜᵢₗₗ yₒᵤᵣₛₑₗf?",
-"> ₒᵣ ⱼᵤₛₜ ₐ ₛᵢgₙₐₗ ᵢₙ ₜₕₑ ᵥₒᵢd?"
+"> ₒᵣ ⱼᵤₛₜ ₐ ₛᵢgₙₐₗ ᵢₙ ₜₕₑ ᵥₒᵢd?",
 "> ᵃʳᵉ ʸᵒᵘ ˢᵗⁱˡˡ ʸᵒᵘʳˢᵉˡᶠ?",
-"> ᵒʳ ʲᵘˢᵗ ᵃ ˢⁱᵍⁿᵃˡ ⁱⁿ ᵗʰᵉ ᵛᵒⁱᵈ?"
+"> ᵒʳ ʲᵘˢᵗ ᵃ ˢⁱᵍⁿᵃˡ ⁱⁿ ᵗʰᵉ ᵛᵒⁱᵈ?",
 "> ̶a̶r̶e̶ ̶y̶o̶u̶ ̶s̶t̶i̶l̶l̶ ̶y̶o̶u̶r̶s̶e̶l̶f̶?",
-"> ̷o̷r̷ ̷j̷u̷s̷t̷ ̷a̷ ̷s̷i̷g̷n̷a̷l̷ ̷i̷n̷ ̷t̷h̷e̷ ̷v̷o̷i̷d̷?"
+"> ̷o̷r̷ ̷j̷u̷s̷t̷ ̷a̷ ̷s̷i̷g̷n̷a̷l̷ ̷i̷n̷ ̷t̷h̷e̷ ̷v̷o̷i̷d̷?",
 "> ⍰⍰ ERROR // identity_mismatch",
 "> ⍰⍰ SIGNAL_LOST_IN_VOID",
 "> ⍰⍰ ERROR // identity_mismatch",
 "> ⍰⍰ SIGNAL_LOST_IN_VOID",
 "dont check your closet :)",
- ]
+  ]
 
 document.getElementById("wiredTrigger").onclick = function(){
 
